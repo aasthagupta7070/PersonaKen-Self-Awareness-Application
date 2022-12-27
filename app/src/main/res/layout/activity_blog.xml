@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".blog">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:logo="@drawable/ic_baseline_view_sidebar_24"
+        app:title="PersonaKen"
+        app:titleTextColor="#AEB7C6"
+        app:titleMarginStart="70dp"
+
+        tools:ignore="MissingConstraints"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="57dp"
+        android:background="@color/hint">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="358dp"
+            android:layout_height="56dp"
+            android:layout_margin="24dp"
+            android:background="@color/white"
+            android:padding="26dp"
+            android:text="TextView"
+            android:textColor="@color/hint"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="37dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="436dp"
+            android:layout_margin="26dp"
+            android:background="@color/white"
+            android:padding="186dp"
+            android:text="TextView"
+            android:textColor="@color/hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="34dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lay1">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#1B3259"
+            android:textColor="@color/hint"
+            android:text="Button"
+            android:padding="16dp"
+            android:layout_margin="26dp"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#1B3259"
+            android:textColor="@color/hint"
+            android:text="Button"
+            android:layout_margin="26dp"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#072B53"
+    tools:context=".Splashscreen">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="364dp"
+        android:layout_height="238dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="400dp"
+        android:src="@drawable/logo"
+        android:transitionName="logo_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/pers"
+        android:layout_width="221dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginLeft="40dp"
+        android:text="PERSONA"
+        android:textColor="#6686BC"
+        android:transitionName="logo_name"
+
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ken"
+        android:layout_width="103dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="50dp"
+        android:text="KEN"
+        android:textColor="#5E83C1"
+android:transitionName="logo_text"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="90dp"
+        android:text="Let's Know Ourselves"
+        android:textColor="#5E83C1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

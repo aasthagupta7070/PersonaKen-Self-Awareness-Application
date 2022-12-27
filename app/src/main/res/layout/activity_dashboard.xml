@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:logo="@drawable/ic_baseline_view_sidebar_24"
+              app:title="PersonaKen"
+            app:titleTextColor="#142643"
+            app:titleMarginStart="70dp"
+
+            tools:ignore="MissingConstraints"
+
+            />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="219dp"
+        android:layout_height="98dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="77dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="161dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="176dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/Quiz"
+                    android:layout_width="123dp"
+                    android:layout_height="84dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_baseline_quiz_24" />
+
+                <Button
+                    android:id="@+id/quizb"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Quiz"
+                    android:layout_centerInParent="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:fontFamily="serif"
+                    android:text="Quiz"
+                    android:textColor="#253B60"
+                    android:textSize="24dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/analytics"
+                android:layout_width="102dp"
+                android:layout_height="88dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_baseline_analytics_24" />
+
+            <Button
+                android:id="@+id/analyb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/analytics"
+                android:layout_centerInParent="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:fontFamily="monospace"
+                android:text="Analytics"
+                android:textColor="#1F3251"
+                android:textSize="24dp" />
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="392dp"
+        android:layout_height="154dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="338dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/blogb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buddy"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/white"
+                    android:fontFamily="monospace"
+                    android:text="BLOG"
+                    android:textColor="#213860"
+                    android:textSize="24dp" />
+
+                <ImageView
+                    android:id="@+id/buddy"
+                    android:layout_width="105dp"
+                    android:layout_height="71dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="36dp"
+                    android:src="@drawable/ic_baseline_library_books_24" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/feedback"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_baseline_bar_chart_24" />
+
+                    <Button
+                        android:id="@+id/prob"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/feedback"
+                        android:layout_centerInParent="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/white"
+                        android:fontFamily="monospace"
+                        android:text="Progress"
+                        android:textColor="#203E70"
+                         />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="176dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="493dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/budb"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/blogs"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="21dp"
+                    android:background="@color/white"
+                    android:fontFamily="monospace"
+                    android:text="buddy"
+                    android:textColor="#203A67"
+                    android:textSize="24dp" />
+
+                <ImageView
+                    android:id="@+id/blogs"
+                    android:layout_width="101dp"
+                    android:layout_height="82dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="38dp"
+                    android:src="@drawable/ic_baseline_cruelty_free_24" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/xyz"
+                    android:layout_width="90dp"
+                    android:layout_height="84dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_baseline_feedback_24" />
+
+                <Button
+                    android:id="@+id/feedb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/xyz"
+                    android:layout_centerInParent="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/white"
+                    android:fontFamily="monospace"
+                    android:text="Feedback"
+                    android:textColor="#203A65"
+                    android:textSize="24dp"
+                     />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/KYs"
+        android:layout_width="147dp"
+        android:layout_height="69dp"
+        android:fontFamily="monospace"
+        android:text="Know Yourself"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_editor_absoluteY="56dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

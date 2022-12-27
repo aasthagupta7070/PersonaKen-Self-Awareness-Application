@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "450041718849",
+    "project_id": "personaken-118b7",
+    "storage_bucket": "personaken-118b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450041718849:android:aa7e818638d994fbd47ec0",
+        "android_client_info": {
+          "package_name": "com.Project2.personaken"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450041718849-s1rutfalri6bfr6jpctluf8m09jg5qkh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC84Pl_CHy3rZ9hvAlttrdWEE75lWTlcf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450041718849-s1rutfalri6bfr6jpctluf8m09jg5qkh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buddy">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:logo="@drawable/ic_baseline_view_sidebar_24"
+        app:title="PersonaKen"
+        app:titleTextColor="#142643"
+        app:titleMarginStart="70dp"
+
+        tools:ignore="MissingConstraints"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="413dp"
+        android:layout_height="251dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/Map"
+                    android:layout_width="123dp"
+                    android:layout_height="84dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_baseline_quiz_24" />
+
+                <Button
+                    android:id="@+id/roadmap"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Map"
+                    android:layout_centerInParent="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:fontFamily="serif"
+                    android:text="Map"
+                    android:textColor="#253B60"
+                    android:textSize="24dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/analytics"
+                    android:layout_width="102dp"
+                    android:layout_height="88dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_baseline_analytics_24" />
+
+                <Button
+                    android:id="@+id/chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/analytics"
+                    android:layout_centerInParent="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:fontFamily="monospace"
+                    android:text="chat"
+                    android:textColor="#1F3251"
+                    android:textSize="24dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="304dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/lay1"
+        tools:layout_editor_absoluteX="-5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/Quiz"
+                    android:layout_width="123dp"
+                    android:layout_height="84dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_baseline_quiz_24" />
+
+                <Button
+                    android:id="@+id/Game"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Quiz"
+                    android:layout_centerInParent="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:fontFamily="serif"
+                    android:text="game"
+                    android:textColor="#253B60"
+                    android:textSize="24dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/quote"
+                    android:layout_width="102dp"
+                    android:layout_height="88dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_baseline_analytics_24" />
+
+                <Button
+                    android:id="@+id/quotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quote"
+                    android:layout_centerInParent="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:fontFamily="monospace"
+                    android:text="quotes"
+                    android:textColor="#1F3251"
+                    android:textSize="24dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
